@@ -1,0 +1,59 @@
+
+nav{
+    display: block;
+}
+
+nav.header{
+    position : relative;
+    height: 88px;
+    width : 100%;
+    background-color:#007fc0;
+    color : white;
+}
+
+nav.header > div.icon {
+    position:relative;
+    float:left;
+    margin-left:76px;
+    width : 164px;
+    height: 46px;
+    margin-top: 21px;
+}
+
+nav.header > div.icon .image{
+    width : 164px;
+    height:46px;
+}
+
+nav.header > ul.list{
+    position:relative;
+    float:right;
+    display: block;
+    list-style: none;
+    margin-right: 56px;
+    vertical-align: middle;
+}
+
+nav.header > ul.list > li{
+    position:relative;
+    font-size: 24px;
+    margin:19px 20px;
+    width : 50px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+
+nav.header > ul.list li.sdk{
+    width: 96px;
+}
+
+nav.header > ul.list li.login{
+    font-weight: bold;
+    margin-left: 44px;
+}
+
+nav.header > ul.list li.register{
+    font-weight: bold;
+    margin: 19px 40px 19px 20px;
+}

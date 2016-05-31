@@ -1,0 +1,29 @@
+@import "header.css";
+@import "./ads.css";
+@import "./intro.css";
+@import "./pro.css";
+@import "footer.css";
+
+*{
+    margin: 0 0;
+    padding : 0 0;
+}
+
+html,html body {
+    margin:0 auto;
+    min-width : 780px;
+    max-width : 1950px;
+    background-color: white;
+}
+
+.text-left {
+     text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-indent {
+    text-indent: 20px;
+}

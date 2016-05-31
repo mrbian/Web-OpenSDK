@@ -1,0 +1,305 @@
+
+nav{
+    display: block;
+}
+
+nav.header{
+    position : relative;
+    height: 88px;
+    width : 100%;
+    background-color:#007fc0;
+    color : white;
+}
+
+nav.header > div.icon {
+    position:relative;
+    float:left;
+    margin-left:76px;
+    width : 164px;
+    height: 46px;
+    margin-top: 21px;
+}
+
+nav.header > div.icon .image{
+    width : 164px;
+    height:46px;
+}
+
+nav.header > ul.list{
+    position:relative;
+    float:right;
+    display: block;
+    list-style: none;
+    margin-right: 56px;
+    vertical-align: middle;
+}
+
+nav.header > ul.list > li{
+    position:relative;
+    font-size: 24px;
+    margin:19px 20px;
+    width : 50px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+}
+
+nav.header > ul.list li.sdk{
+    width: 96px;
+}
+
+nav.header > ul.list li.login{
+    font-weight: bold;
+    margin-left: 44px;
+}
+
+nav.header > ul.list li.register{
+    font-weight: bold;
+    margin: 19px 40px 19px 20px;
+}
+
+div.ads {
+    width : 100%;
+    height: 532px;
+    padding-top: 118px;
+    position : relative;
+    background: url(fff32d10c62cbb6cc063cfa7febc1f98.png) no-repeat;
+    background-size : 100% 100%;
+}
+
+div.ads > .ads-content{
+    margin:0 auto;
+    width : 772px;
+    position : relative;
+}
+
+div.ads > .ads-content .ad-img {
+    width : 296px;
+    height : 296px;
+    display: inline-block;
+}
+
+div.ads > .ads-content img.image{
+    width : 296px;
+    height : 296px;
+}
+
+div.ads > .ads-content .content {
+    margin-left:92px;
+    color : white;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content .content-title{
+    font-size:54px;
+    width:325px;
+    height : 54px;
+    margin-bottom:54px;
+}
+
+.content .content-info{
+    line-height: 36px;
+}
+
+.content .content-href{
+    margin-top : 54px;
+    color : white;
+    background-color: transparent;
+    border: 3px white solid;
+    text-align:center;
+    height : 60px;
+    width : 240px;
+    font-size : 30px;
+    border-radius: 1000px;
+}
+
+div.ads > .ad-ctrl{
+    position:absolute;
+    bottom: 20px;
+    left : 50%;
+    right: 50%;
+    transform: translate(-90px,0);
+    width : 180px;
+    height: 20px;
+}
+
+.ad-ctrl .ctrl {
+    background-color: #38bafd;
+    width:20px;
+    height:20px;
+    border-radius: 50% 50%;
+    margin : 0 20px;
+    float:left;
+}
+
+.ctrl.active {
+    background-color: white;
+}div.intro{
+    width : 100%;
+    height : 800px;
+    background-color: white;
+    padding-top : 92px;
+}
+
+div.intro > .intro-content {
+    width : 1074px;
+    height : 800px;
+    margin: 0 auto;
+}
+
+div.intro > .intro-content ul.content {
+    list-style: none;
+    display: block;
+}
+
+div.intro > .intro-content ul.content li {
+    height : 610px;
+    width : 258px;
+    display: block;
+    margin: 0 50px;
+    float : left;
+    text-align: center;
+}
+
+div.intro > .intro-content ul.content li div.image{
+    width : 258px;
+    height : 235px;
+    text-align: center;
+}
+
+ul.content li img {
+    width : 234px;
+    height: 234px;
+}
+
+div.intro > .intro-content ul.content li .title {
+    font-size : 36px;
+    color : black;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+div.intro > .intro-content ul.content li .info{
+    line-height : 30px;
+    font-size : 24px;
+    color : grey;
+
+}div.pro {
+    background-color: #efefef;
+    height : 972px;
+    width : 100%;
+}
+
+div.pro > div.pro-content {
+    width : 1100px;
+    height : 972px;
+    margin : 0 auto;
+    position : relative;
+    text-align: center;
+    padding-top : 70px;
+    padding-bottom: 114px;
+}
+
+div.pro > div.pro-content .pro-title{
+    font-size : 44px;
+    color : black;
+}
+
+div.pro > div.pro-content .list-container{
+    margin-top: 114px;
+    width : 100%;
+    height : auto;
+}
+
+div.pro > div.pro-content .list{
+    float : left;
+    height : 114px;
+    width : 510px;
+    text-align: left;
+    margin-left:30px;
+    margin-top : 40px;
+}
+
+div.pro > div.pro-content .list img{
+    width : 114px;
+    height:114px;
+    border-radius: 30px;
+}
+
+div.pro > div.pro-content .list .list-info{
+    text-align: left;
+    float : right;
+    width : 360px;
+    height : 85px;
+}
+
+div.pro > div.pro-content .info-title{
+    font-size : 30px;
+}
+
+
+div.pro > div.pro-content .list .info-content{
+    font-size : 24px;
+    width : 360px;
+    color : grey;
+}
+
+div.footer{
+    height : 144px;
+    background-color: #333333;
+    position:relative;
+    margin-top: 400px;
+    padding : 30px 0 0 0;
+}
+
+div.footer > .footer-container {
+    width : 1064px;
+    height : 100px;
+    margin : 0 auto;
+}
+
+div.footer > .footer-container  p {
+    line-height: 40px;
+    display: block;
+}
+
+div.footer > .footer-container  span{
+    color : white;
+    font-size:24px;
+    vertical-align: middle;
+}
+
+div.footer > .footer-container img{
+    width : 26px;
+    height: 26px;
+    vertical-align: middle;
+}
+
+span.float-right {
+    float:right;
+}*{
+    margin: 0 0;
+    padding : 0 0;
+}
+
+html,html body {
+    margin:0 auto;
+    min-width : 780px;
+    max-width : 1950px;
+    background-color: white;
+}
+
+.text-left {
+     text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-indent {
+    text-indent: 20px;
+}
