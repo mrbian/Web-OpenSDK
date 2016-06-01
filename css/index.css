@@ -11,8 +11,8 @@
 
 html,html body {
     margin:0 auto;
-    min-width : 780px;
     max-width : 1950px;
+    font-size : 10px;
     background-color: white;
 }
 
