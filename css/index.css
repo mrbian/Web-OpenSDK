@@ -7,6 +7,8 @@
 *{
     margin: 0 0;
     padding : 0 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html,html body {
@@ -14,6 +16,12 @@ html,html body {
     max-width : 1950px;
     font-size : 10px;
     background-color: white;
+}
+
+div.con {
+    position:relative;
+    width : 100%;
+    height : auto;
 }
 
 .text-left {
@@ -26,4 +34,14 @@ html,html body {
 
 .text-indent {
     text-indent: 20px;
+}
+
+.clearfix {
+    clear:both;
+}
+
+li > a{
+    text-decoration: none;
+    cursor: pointer;
+    color : white;
 }

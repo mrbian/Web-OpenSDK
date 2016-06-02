@@ -3,6 +3,7 @@
  */
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
     entry: './entry.js',
@@ -18,6 +19,7 @@ module.exports = {
         ]
     },
     plugins : [
-        new ExtractTextPlugin("index.css")
+        new ExtractTextPlugin("index.css"),
+        new LiveReloadPlugin()
     ]
 };

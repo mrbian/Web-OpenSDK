@@ -1,259 +1,513 @@
+@media all and (min-width: 1220px){
+    nav{
+        display: block;
+    }
 
-nav{
-    display: block;
+    nav.header{
+        position : relative;
+        height: 88px;
+        width : 100%;
+        background-color:#007fc0;
+        color : white;
+    }
+
+    nav.header > div.icon {
+        position:relative;
+        float:left;
+        margin-left:76px;
+        width : 164px;
+        height: 46px;
+        margin-top: 21px;
+    }
+
+    nav.header > div.icon .image{
+        width : 164px;
+        height:46px;
+    }
+
+    nav.header > ul.list{
+        position:relative;
+        float:right;
+        display: block;
+        list-style: none;
+        margin-right: 56px;
+        vertical-align: middle;
+    }
+
+    nav.header > ul.list > li{
+        position:relative;
+        font-size: 24px;
+        margin:19px 20px;
+        width : 50px;
+        height: 50px;
+        float: left;
+        line-height: 50px;
+    }
+
+    nav.header > ul.list li.sdk{
+        width: 96px;
+    }
+
+    nav.header > ul.list li.login{
+        font-weight: bold;
+        margin-left: 44px;
+    }
+
+    nav.header > ul.list li.register{
+        font-weight: bold;
+        margin: 19px 40px 19px 20px;
+    }
 }
 
-nav.header{
-    position : relative;
-    height: 88px;
-    width : 100%;
-    background-color:#007fc0;
-    color : white;
+@media all and (max-width: 1219px){
+    nav{
+        display: block;
+    }
+
+    nav.header{
+        position : relative;
+        height: 88px;
+        width : 100%;
+        background-color:#007fc0;
+        color : white;
+    }
+
+    nav.header > div.icon {
+        position:relative;
+        float:left;
+        margin-left:76px;
+        width : 164px;
+        height: 46px;
+        margin-top: 21px;
+    }
+
+    nav.header > div.icon .image{
+        width : 164px;
+        height:46px;
+    }
+
+    nav.header > ul.list{
+        display: none;
+        position:relative;
+        float:right;
+        /*display: block;*/
+        list-style: none;
+        margin-right: 56px;
+        vertical-align: middle;
+    }
+
+    nav.header > ul.list > li{
+        position:relative;
+        font-size: 24px;
+        margin:19px 20px;
+        width : 50px;
+        height: 50px;
+        float: left;
+        line-height: 50px;
+    }
+
+    nav.header > ul.list li.sdk{
+        width: 96px;
+    }
+
+    nav.header > ul.list li.login{
+        font-weight: bold;
+        margin-left: 44px;
+    }
+
+    nav.header > ul.list li.register{
+        font-weight: bold;
+        margin: 19px 40px 19px 20px;
+    }
+}@media all and (min-width : 1220px){
+    div.ads {
+        width : 100%;
+        height: 532px;
+        padding-top: 118px;
+        position : relative;
+        background: url(fff32d10c62cbb6cc063cfa7febc1f98.png) no-repeat;
+        background-size : 100% 100%;
+    }
+
+    div.ads > .ads-content{
+        margin:0 auto;
+        width : 772px;
+        position : relative;
+    }
+
+    div.ads > .ads-content .ad-img {
+        width : 296px;
+        height : 296px;
+        display: inline-block;
+    }
+
+    div.ads > .ads-content img.image{
+        width : 296px;
+        height : 296px;
+    }
+
+    div.ads > .ads-content .content {
+        margin-left:92px;
+        color : white;
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .content .content-title{
+        font-size:54px;
+        width:325px;
+        height : 54px;
+        margin-bottom:54px;
+    }
+
+    .content .content-info{
+        line-height: 36px;
+    }
+
+    .content .content-href{
+        margin-top : 54px;
+        color : white;
+        background-color: transparent;
+        border: 3px white solid;
+        text-align:center;
+        height : 60px;
+        width : 240px;
+        font-size : 30px;
+        border-radius: 1000px;
+    }
+
+    div.ads > .ad-ctrl{
+        position:absolute;
+        bottom: 20px;
+        left : 50%;
+        right: 50%;
+        transform: translate(-90px,0);
+        width : 180px;
+        height: 20px;
+    }
+
+    .ad-ctrl .ctrl {
+        background-color: #38bafd;
+        width:20px;
+        height:20px;
+        border-radius: 50% 50%;
+        margin : 0 20px;
+        float:left;
+    }
+
+    .ctrl.active {
+        background-color: white;
+    }
 }
 
-nav.header > div.icon {
-    position:relative;
-    float:left;
-    margin-left:76px;
-    width : 164px;
-    height: 46px;
-    margin-top: 21px;
+@media all and (max-width: 1219px){
+    div.ads {
+        width : 100%;
+        position: relative;
+        background: url(fff32d10c62cbb6cc063cfa7febc1f98.png) no-repeat;
+        background-size: 100% 100%;
+        z-index: 1000;
+    }
+
+    div.ads > .ads-content{
+        width : 100%;
+        text-align: center;
+        padding: 4rem 2rem 6rem 2rem;
+    }
+
+    div.ads > .ads-content .ad-img{
+        max-width : 100%;
+        height : auto;
+        padding-bottom: 1rem;
+    }
+
+     div.ads > .ads-content img{
+         width : 13rem;
+         height: auto;
+     }
+
+    div.ads > .ads-content .content {
+        color : white;
+        font-size: 1.6rem;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .content .content-title{
+        display: none;
+    }
+
+    .content .content-info{
+    }
+
+    .content .content-href{
+        display: none;
+    }
+
+    div.ads > .ad-ctrl{
+        position:absolute;
+        bottom: 2rem;
+        left : 50%;
+        right: 50%;
+        transform: translate(-90px,0);
+        width : 180px;
+        height: 20px;
+    }
+
+    .ad-ctrl .ctrl {
+        background-color: #38bafd;
+        width:20px;
+        height:20px;
+        border-radius: 50% 50%;
+        margin : 0 20px;
+        float:left;
+    }
+
+    .ctrl.active {
+        background-color: white;
+    }
+}@media all and (min-width: 1220px){
+    div.intro{
+        width : 100%;
+        background-color: white;
+        padding-top : 92px;
+    }
+
+    div.intro > .intro-content {
+        width : 1074px;
+        margin: 0 auto;
+    }
+
+    div.intro > .intro-content ul.content {
+        list-style: none;
+        display: block;
+        height : 610px;
+    }
+
+    div.intro > .intro-content ul.content li {
+        height : 610px;
+        width : 258px;
+        display: block;
+        margin: 0 50px;
+        float : left;
+        text-align: center;
+    }
+
+    div.intro > .intro-content ul.content li div.image{
+        width : 258px;
+        height : 235px;
+        text-align: center;
+    }
+
+    ul.content li img {
+        width : 234px;
+        height: 234px;
+    }
+
+    div.intro > .intro-content ul.content li .title {
+        font-size : 36px;
+        color : black;
+        text-align: center;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    div.intro > .intro-content ul.content li .info{
+        line-height : 30px;
+        font-size : 24px;
+        color : grey;
+
+    }
 }
 
-nav.header > div.icon .image{
-    width : 164px;
-    height:46px;
+@media all and (max-width: 1219px) {
+    div.intro{
+        width : 100%;
+        position: relative;
+        background-color: white;
+    }
+
+    div.intro > .intro-content {
+        width : 100%;
+        text-align : center;
+        padding : 1rem 2rem;
+    }
+
+    div.intro > .intro-content ul.content {
+        list-style: none;
+        display: block;
+    }
+
+    div.intro > .intro-content ul.content li {
+        width : 100%;
+        height : 33rem;
+        padding : 1rem;
+        display: block;
+        float : left;
+        text-align: center;
+    }
+
+    div.intro > .intro-content ul.content li div.image{
+        max-width: 70%;
+        width : 18rem;
+        height : auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    ul.content li img {
+        max-width: 70%;
+        width : 18rem;
+        height: auto;
+    }
+
+    div.intro > .intro-content ul.content li .title {
+        font-size : 2.8rem;
+        color : black;
+        text-align: center;
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    div.intro > .intro-content ul.content li .info{
+        line-height : 3rem;
+        font-size : 2rem;
+        color : grey;
+    }
+}@media all and (min-width: 1220px) {
+    div.pro {
+        background-color: #efefef;
+        height: 972px;
+        width: 100%;
+    }
+
+    div.pro > div.pro-content {
+        width: 1100px;
+        height: 972px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    div.pro > div.pro-content .pro-title {
+        font-size: 44px;
+        color: black;
+        letter-spacing: 0.5rem;
+    }
+
+    div.pro > div.pro-content .list-container {
+        margin-top: 70px;
+        width: 100%;
+        height: auto;
+    }
+
+    div.pro > div.pro-content .list {
+        float: left;
+        height: 114px;
+        width: 510px;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    div.pro > div.pro-content .list img {
+        width: 114px;
+        height: 114px;
+        border-radius: 30px;
+    }
+
+    div.pro > div.pro-content .list .list-info {
+        text-align: left;
+        float: right;
+        width: 360px;
+        height: 85px;
+    }
+
+    div.pro > div.pro-content .info-title {
+        color : #337ab7;
+        font-size: 30px;
+    }
+
+    div.pro > div.pro-content .list .info-content {
+        font-size: 24px;
+        width: 360px;
+        color: grey;
+    }
 }
 
-nav.header > ul.list{
-    position:relative;
-    float:right;
-    display: block;
-    list-style: none;
-    margin-right: 56px;
-    vertical-align: middle;
-}
+@media all and (max-width : 1219px) {
+    div.pro {
+        background-color: #efefef;
+        width: 100%;
+    }
 
-nav.header > ul.list > li{
-    position:relative;
-    font-size: 24px;
-    margin:19px 20px;
-    width : 50px;
-    height: 50px;
-    float: left;
-    line-height: 50px;
-}
+    div.pro > div.pro-content {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        padding-top: 1rem;
+    }
 
-nav.header > ul.list li.sdk{
-    width: 96px;
-}
+    div.pro > div.pro-content .pro-title {
+        font-size: 3rem;
+        color: black;
+        letter-spacing: 0.5rem;
+    }
 
-nav.header > ul.list li.login{
-    font-weight: bold;
-    margin-left: 44px;
-}
+    div.pro > div.pro-content .list-container {
+        width: 100%;
+        overflow: hidden;
+        zoom : 1;
+        padding: 3rem 1rem;
+    }
 
-nav.header > ul.list li.register{
-    font-weight: bold;
-    margin: 19px 40px 19px 20px;
-}
+    div.pro > div.pro-content .list {
+        float: left;
+        height: 11.4rem;
+        width: 100%;
+        text-align: left;
+        font-size : 2rem;
+        margin-bottom : 3rem;
+    }
 
-div.ads {
-    width : 100%;
-    height: 532px;
-    padding-top: 118px;
-    position : relative;
-    background: url(fff32d10c62cbb6cc063cfa7febc1f98.png) no-repeat;
-    background-size : 100% 100%;
-}
+    div.pro > div.pro-content .list img {
+        position: relative;
+        top : 1rem;
+        width: 9.4rem;
+        float : left;
+        height: 9.4rem;
+        border-radius: 3rem;
+        padding: 1rem;
+        vertical-align: middle;
+    }
 
-div.ads > .ads-content{
-    margin:0 auto;
-    width : 772px;
-    position : relative;
-}
+    div.pro > div.pro-content .list .list-info {
+        text-align: left;
+        float: left;
+        width: 70%;
+        height: 8.5rem;
+        padding: 1rem;
+    }
 
-div.ads > .ads-content .ad-img {
-    width : 296px;
-    height : 296px;
-    display: inline-block;
-}
+    div.pro > div.pro-content .info-title {
+        color : #337ab7;
+    }
 
-div.ads > .ads-content img.image{
-    width : 296px;
-    height : 296px;
-}
-
-div.ads > .ads-content .content {
-    margin-left:92px;
-    color : white;
-    font-size: 24px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.content .content-title{
-    font-size:54px;
-    width:325px;
-    height : 54px;
-    margin-bottom:54px;
-}
-
-.content .content-info{
-    line-height: 36px;
-}
-
-.content .content-href{
-    margin-top : 54px;
-    color : white;
-    background-color: transparent;
-    border: 3px white solid;
-    text-align:center;
-    height : 60px;
-    width : 240px;
-    font-size : 30px;
-    border-radius: 1000px;
-}
-
-div.ads > .ad-ctrl{
-    position:absolute;
-    bottom: 20px;
-    left : 50%;
-    right: 50%;
-    transform: translate(-90px,0);
-    width : 180px;
-    height: 20px;
-}
-
-.ad-ctrl .ctrl {
-    background-color: #38bafd;
-    width:20px;
-    height:20px;
-    border-radius: 50% 50%;
-    margin : 0 20px;
-    float:left;
-}
-
-.ctrl.active {
-    background-color: white;
-}div.intro{
-    width : 100%;
-    height : 800px;
-    background-color: white;
-    padding-top : 92px;
-}
-
-div.intro > .intro-content {
-    width : 1074px;
-    height : 800px;
-    margin: 0 auto;
-}
-
-div.intro > .intro-content ul.content {
-    list-style: none;
-    display: block;
-}
-
-div.intro > .intro-content ul.content li {
-    height : 610px;
-    width : 258px;
-    display: block;
-    margin: 0 50px;
-    float : left;
-    text-align: center;
-}
-
-div.intro > .intro-content ul.content li div.image{
-    width : 258px;
-    height : 235px;
-    text-align: center;
-}
-
-ul.content li img {
-    width : 234px;
-    height: 234px;
-}
-
-div.intro > .intro-content ul.content li .title {
-    font-size : 36px;
-    color : black;
-    text-align: center;
-    margin-top: 36px;
-    margin-bottom: 36px;
-}
-
-div.intro > .intro-content ul.content li .info{
-    line-height : 30px;
-    font-size : 24px;
-    color : grey;
-
-}div.pro {
-    background-color: #efefef;
-    height : 972px;
-    width : 100%;
-}
-
-div.pro > div.pro-content {
-    width : 1100px;
-    height : 972px;
-    margin : 0 auto;
-    position : relative;
-    text-align: center;
-    padding-top : 70px;
-    padding-bottom: 114px;
-}
-
-div.pro > div.pro-content .pro-title{
-    font-size : 44px;
-    color : black;
-}
-
-div.pro > div.pro-content .list-container{
-    margin-top: 114px;
-    width : 100%;
-    height : auto;
-}
-
-div.pro > div.pro-content .list{
-    float : left;
-    height : 114px;
-    width : 510px;
-    text-align: left;
-    margin-left:30px;
-    margin-top : 40px;
-}
-
-div.pro > div.pro-content .list img{
-    width : 114px;
-    height:114px;
-    border-radius: 30px;
-}
-
-div.pro > div.pro-content .list .list-info{
-    text-align: left;
-    float : right;
-    width : 360px;
-    height : 85px;
-}
-
-div.pro > div.pro-content .info-title{
-    font-size : 30px;
-}
-
-
-div.pro > div.pro-content .list .info-content{
-    font-size : 24px;
-    width : 360px;
-    color : grey;
-}
-
-@media all and (min-width: 1220px) {
+    div.pro > div.pro-content .list .info-content {
+        color: grey;
+    }
+}@media all and (min-width: 1220px) {
     div.footer {
         height: 144px;
         background-color: #333333;
-        position: relative;
-        margin-top: 400px;
-        padding: 30px 0 0 0;
+        position: absolute;
+        left : 0;
+        right : 0;
+        bottom :0;
+        padding: 20px 0 0 0;
     }
 
     div.footer > .footer-container {
@@ -265,7 +519,14 @@ div.pro > div.pro-content .list .info-content{
     div.footer > .footer-container p{
         line-height: 40px;
         display: block;
-        margin-top : 20px;
+    }
+
+    p.first{
+        margin-bottom : 10px;
+    }
+
+    p.second{
+        margin-top : 10px;
     }
 
     div.footer > .footer-container span {
@@ -285,11 +546,11 @@ div.pro > div.pro-content .list .info-content{
     }
 }
 
-@media all and (max-width: 768px) or (min-width: 768px){
+@media all and (max-width : 1219px){
     div.footer {
-        height: 114px;
+        height: 12rem;
         background-color: #333333;
-        position: relative;
+        color : white;
         font-size: 1.4rem;
     }
 
@@ -297,16 +558,44 @@ div.pro > div.pro-content .list .info-content{
         width : 100%;
         height : 114px;
         position: relative;
+        padding-top : 1.2rem;
         text-align: center;
     }
 
-    div.footer > .footer-container p {
+    div.footer > .footer-container img {
+        width : 2.6rem;
+        height : 2.6rem;
+        vertical-align: middle;
+    }
 
+    div.footer > .footer-container span {
+        color: white;
+        font-size: 1.6rem;
+        vertical-align: middle;
+    }
+
+    div.footer > .footer-container p {
+        line-height : 3rem;
+    }
+
+
+    p.first {
+        display: block;
+        margin-bottom : 1.2rem;
+    }
+
+    p.second {
+    }
+
+    span.float-right{
+        display: block;
     }
 }
 *{
     margin: 0 0;
     padding : 0 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html,html body {
@@ -314,6 +603,12 @@ html,html body {
     max-width : 1950px;
     font-size : 10px;
     background-color: white;
+}
+
+div.con {
+    position:relative;
+    width : 100%;
+    height : auto;
 }
 
 .text-left {
@@ -326,4 +621,14 @@ html,html body {
 
 .text-indent {
     text-indent: 20px;
+}
+
+.clearfix {
+    clear:both;
+}
+
+li > a{
+    text-decoration: none;
+    cursor: pointer;
+    color : white;
 }
