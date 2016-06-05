@@ -57,6 +57,10 @@
         font-weight: bold;
         margin: 19px 40px 19px 20px;
     }
+
+    .collapse{
+        display: block;
+    }
 }
 
 @media all and (max-width: 1219px){
@@ -133,4 +137,13 @@
     nav.header > ul.list li.register{
         font-weight: bold;
     }
+
+    .collapse{
+        display: none;
+    }
+
+    .collapse.in.collapsing {
+
+    }
+
 }
