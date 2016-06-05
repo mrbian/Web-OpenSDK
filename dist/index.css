@@ -57,6 +57,10 @@
         font-weight: bold;
         margin: 19px 40px 19px 20px;
     }
+
+    .collapse{
+        display: block;
+    }
 }
 
 @media all and (max-width: 1219px){
@@ -133,6 +137,15 @@
     nav.header > ul.list li.register{
         font-weight: bold;
     }
+
+    .collapse{
+        display: none;
+    }
+
+    .collapse.in.collapsing {
+
+    }
+
 }@media all and (min-width : 1220px){
     div.ads {
         width : 100%;
@@ -612,10 +625,16 @@
     -webkit-box-sizing: border-box;
 }
 
+@font-face {
+    font-family: yuan;
+    src:url(30e0b2ecbc49b1c45b4303b8b06cf31f.ttf);
+}
+
 html,html body {
     margin:0 auto;
     max-width : 1950px;
     font-size : 10px;
+    font-family: yuan, monospace;
     background-color: white;
 }
 
