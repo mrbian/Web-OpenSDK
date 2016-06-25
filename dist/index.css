@@ -156,10 +156,17 @@
         background-size : 100% 100%;
     }
 
+    div.ads ul , div.ads ul li{
+        position : relative;
+        list-style: none;
+        display: block;
+    }
+
     div.ads > .ads-content{
         margin:0 auto;
         width : 772px;
         position : relative;
+        overflow: hidden;
     }
 
     div.ads > .ads-content .ad-img {
@@ -221,6 +228,7 @@
         border-radius: 50% 50%;
         margin : 0 20px;
         float:left;
+        cursor: pointer;
     }
 
     .ctrl.active {
@@ -626,15 +634,15 @@
 }
 
 @font-face {
-    font-family: yuan;
-    src:url(30e0b2ecbc49b1c45b4303b8b06cf31f.ttf);
+    font-family: myfont;
+    src : url(14cb2c1fb4ef0c52dae72284425d65f0.TTF);
 }
 
 html,html body {
     margin:0 auto;
     max-width : 1950px;
     font-size : 10px;
-    font-family: yuan, monospace;
+    font-family: myfont, monospace;
     background-color: white;
 }
 

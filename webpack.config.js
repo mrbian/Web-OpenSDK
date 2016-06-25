@@ -16,7 +16,8 @@ module.exports = {
             { test : /\.js$/, exclude : /node_modules/, loader : 'babel-loader'},
             { test : /\.css$/, loader : ExtractTextPlugin.extract("style-loader","css-loader") },
             { test : /\.png$|\.jpg|\.gif$/ , loader : 'file-loader' },
-            { test : /\.ttf/, loader : 'file-loader' }
+            { test : /\.ttf/, loader : 'file-loader' },
+            { test : /\.TTF/, loader : 'file-loader' }
         ]
     },
     plugins : [
