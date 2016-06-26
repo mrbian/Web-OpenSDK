@@ -26,7 +26,6 @@
         width : 772px;
         height: 400px;
         position : relative;
-        overflow: hidden;
     }
 
     div.ads > .ads-content .ad-img {

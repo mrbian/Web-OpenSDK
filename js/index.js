@@ -146,3 +146,8 @@ function setStyle(property,value){
     var elem = this;
     elem.style[property] = value;
 }
+
+//z-index relative 等定位不会受到影响
+//opacity无transaction幻灯片的实现
+//不是所有对象都能添加addEventlistener的坑
+//transaction3d的gpu加速
