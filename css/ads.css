@@ -8,15 +8,23 @@
         background-size : 100% 100%;
     }
 
-    div.ads ul , div.ads ul li{
-        position : relative;
+    div.ads ul{
         list-style: none;
         display: block;
+        position: relative;
+    }
+
+    div.ads li{
+        position : absolute;
+        display: block;
+        left:0;
+        top:0;
     }
 
     div.ads > .ads-content{
         margin:0 auto;
         width : 772px;
+        height: 400px;
         position : relative;
         overflow: hidden;
     }
@@ -85,6 +93,7 @@
 
     .ctrl.active {
         background-color: white;
+        transform: translate3d(0,0,0);
     }
 }
 
@@ -94,8 +103,21 @@
         position: relative;
         background: url('../images/ad_bg.png') no-repeat;
         background-size: 100% 100%;
-        z-index: 1000;
     }
+
+    div.ads ul{
+        list-style: none;
+        display: block;
+        position: relative;
+    }
+
+    div.ads li{
+        position : absolute;
+        display: block;
+        left:0;
+        top:0;
+    }
+
 
     div.ads > .ads-content{
         width : 100%;

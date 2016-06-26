@@ -86,24 +86,102 @@
 	        var lists = ad_list.childNodes;
 	        for (var idx in lists) {
 	            if (lists[idx].nodeType === 1) {
-	                lists[idx].setStyle('z-index', 0);
-	                lists[idx].setStyle('opacity', 0);
+	                if (idx == 1) {
+	                    lists[idx].setStyle('opacity', '1');
+	                    lists[idx].setStyle('z-index', '1');
+	                } else {
+	                    lists[idx].setStyle('opacity', '0');
+	                    lists[idx].setStyle('z-index', '0');
+	                }
 	            }
 	        }
+	        var ctrls = document.querySelectorAll('.ctrl');
+	        ctrls[0].addClass('active');
+	        for (var i = 0; i < ctrls.length; i++) {
+	            ctrls[i].index = i;
+	        }
+	        document.querySelector('.ad-ctrl').addEventListener('click', function (event) {
+	            if (typeof event.target.index !== 'undefined') {
+	                SliderToIdx(event.target.index);
+	            }
+	        });
+	        document.querySelector('.ad-ctrl').addEventListener('mouseover', function (event) {
+	            if (typeof event.target.index !== 'undefined') {
+	                SliderToIdx(event.target.index);
+	            }
+	        });
 	    }
 
-	    function SliderCtrlInit() {
+	    function setSliderCtrl(num) {
 	        var ctrls = document.getElementsByClassName('ctrl');
 	        for (var idx in ctrls) {
 	            var ele = ctrls[idx];
 	            if (ele.nodeType !== 1) return;
+	            if (idx == num) {
+	                ele.addClass('active');
+	            } else {
+	                ele.removeClass('active');
+	            }
 	        }
 	    }
 
-	    function SliderToIdx() {}
+	    function SliderToIdx(num) {
+	        var lists = document.querySelectorAll('ul#li_cr > li');
+	        for (var idx in lists) {
+	            if (idx == num) {
+	                lists[(idx + 2) % lists.length].style.zIndex = 0;
+	                lists[(idx + 1) % lists.length].style.zIndex = 0;
+	                lists[idx].style.zIndex = 1;
+	                startrun(lists[(idx + 2) % lists.length], 'opacity', '0');
+	                startrun(lists[(idx + 1) % lists.length], 'opacity', '0');
+	                startrun(lists[idx], 'opacity', '100');
+	                setSliderCtrl(num);
+	            }
+	        }
+	    }
+
+	    function getstyle(obj, name) {
+	        if (obj.currentStyle) {
+	            return obj.currentStyle[name];
+	        } else {
+	            return getComputedStyle(obj, false)[name];
+	        }
+	    }
+
+	    function startrun(obj, attr, target, fn) {
+	        clearInterval(obj.timer);
+	        obj.timer = setInterval(function () {
+	            var cur = 0;
+	            if (attr == "opacity") {
+	                cur = Math.round(parseFloat(getstyle(obj, attr)) * 100);
+	            } else {
+	                cur = parseInt(getstyle(obj, attr));
+	            }
+	            var speed = (target - cur) / 8;
+	            speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+
+	            if (cur == target) {
+	                clearInterval(obj.timer);
+	                if (fn) {
+	                    fn();
+	                }
+	            } else {
+	                if (attr == "opacity") {
+	                    obj.style.filter = "alpha(opacity=" + (cur + speed) + ")";
+	                    obj.style.opacity = (cur + speed) / 100;
+	                } else {
+	                    obj.style[attr] = cur + speed + "px";
+	                }
+	            }
+	        }, 30);
+	    }
 
 	    SliderInit();
-	    SliderCtrlInit();
+	    var count = 0;
+	    var slider = setInterval(function () {
+	        SliderToIdx(count);
+	        count = (count + 1) % 3;
+	    }, 2000);
 	})(undefined);
 
 	function getClass() {
@@ -122,7 +200,7 @@
 	        curValue = elem.getClass();
 	        if (curValue.indexOf(value) !== -1) return;
 	        curValue = curValue + ' ' + value;
-	        elem.setAttribute('class', curValue);
+	        elem.className = curValue;
 	    }
 	}
 
@@ -134,7 +212,7 @@
 	        if (classes.indexOf(value) === -1) return;
 	        classes = classes.replace(value, '');
 	        classes.trim();
-	        elem.setAttribute('class', classes);
+	        elem.className = classes;
 	    }
 	}
 
